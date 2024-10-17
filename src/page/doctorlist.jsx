@@ -2,6 +2,7 @@ import React from 'react'
 import { doctors } from '../assets/assets/assets_frontend/assets'
 import Navbar from '../component/Navbar'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../component/footer'
 
 const Doctorlist = () => {
     const navigate=useNavigate();
@@ -19,6 +20,7 @@ const Doctorlist = () => {
                  </div>
             ))}
           </div> 
+          <Footer/>
      </>     
   )
 }

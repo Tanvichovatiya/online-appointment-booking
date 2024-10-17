@@ -49,7 +49,7 @@ function App() {
         <Route path='/about' element={<About/>}></Route>
         <Route path="/bookappointment" element={<AppointmentForm   addAppointment={addAppointment} />} />
         <Route path="/viewappointment" element={<MyAppointments    appointments={appointments} onDelete={handleDelete}/>} />
-        
+
         <Route
             path="/profile"
             element={

@@ -5,7 +5,6 @@ const Alldoctors = ({doctor}) => {
     const navigate=useNavigate();
   return (
     <>
-   
     <div className="rounded relative mt-5 border h-[350px] shadow-md  cursor-pointer">
         <img  src={doctor.image} alt=""   className="w-full h-30 bg-emerald-200  mb-4  "/>
         <p className='text-center text-[15px]'>{doctor.speciality}</p>
