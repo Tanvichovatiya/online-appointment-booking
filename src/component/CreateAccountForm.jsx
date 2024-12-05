@@ -51,8 +51,9 @@ const CreateAccountForm = ({ createAccount }) => {
 
   return (
     <>
-    <h1 className='mt-10 mb-5 text-center font-semibold text-[25px]'>Create Account</h1>
-    <form onSubmit={handleSubmit}  className="space-y-4 w-[800px] mx-auto">
+    <h1  className='mt-10 mb-5 text-center font-semibold text-[25px]'>Create Account</h1>
+    <div className='bg-violet-400'>
+    <form onSubmit={handleSubmit}  className="space-y-4 w-[800px]  mx-auto">
       <div>
         <label className="block text-lg font-medium mb-1">Email</label>
         <input
@@ -108,6 +109,7 @@ const CreateAccountForm = ({ createAccount }) => {
 
       <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded">Create Account</button>
     </form>
+    </div>
     </>
   );
 };

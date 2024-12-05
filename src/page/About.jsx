@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
 import { assets } from '../assets/assets/assets_frontend/assets'
+import Footer from '../component/footer'
 
 const About = () => {
   return (
@@ -33,6 +34,7 @@ const About = () => {
              <p className='mt-[30px] mb-10 text-center'>Tailored recommendations and reminders to help you stay on top of your health.</p>
         </div>
     </div>
+    <Footer/>
    </> 
   )
 }
