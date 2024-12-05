@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter, HashRouter } from 'react-router-dom';
 import MyProfile from './component/MyProfile';
 import Home from './page/Home';
 import AppointmentForm from './page/AppointmentForm';
@@ -41,7 +41,7 @@ function App() {
     setAppointments(updatedAppointments);
   };
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<CreateAccountForm  createAccount={createAccount}/>} />
         <Route path="/home" element={<Home userData={userData} />} />
@@ -63,7 +63,7 @@ function App() {
         
 
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     
   );
